@@ -1,53 +1,117 @@
-> Edited for use in IDX on 07/09/12
+Got it 👍 I'll draft a nice **README.md** for your **To-Do List App** project based on your folder structure and features.
 
-# Welcome to your Expo app 👋
+Here’s a complete **README.md** you can paste directly into your project:
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+# 📋 To-Do List App
 
-#### Android
+A simple yet modern **To-Do List application** built with **React Native + Expo**.
+This app allows you to create **multiple lists**, add **tasks** inside each list, mark them as completed, and persist data with **AsyncStorage** so your tasks remain even after restarting the app.
 
-Android previews are defined as a `workspace.onStart` hook and started as a vscode task when the workspace is opened/started.
+---
 
-Note, if you can't find the task, either:
-- Rebuild the environment (using command palette: `IDX: Rebuild Environment`), or
-- Run `npm run android -- --tunnel` command manually run android and see the output in your terminal. The device should pick up this new command and switch to start displaying the output from it.
+## 🚀 Features
 
-In the output of this command/task, you'll find options to open the app in a
+* ✅ Create and manage **multiple lists** (e.g., Work, Shopping, School).
+* 📝 Add, edit, and delete tasks in each list.
+* 🔄 Toggle tasks between **completed** and **incomplete**.
+* 🧹 Clear all completed tasks with one click.
+* 💾 **Persistent storage** with AsyncStorage (tasks are saved locally).
+* 🎨 Modern & sleek UI with custom colors and icons.
+* 📱 Works on **iOS, Android, and Web** (via Expo).
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You'll also find options to open the app's developer menu, reload the app, and more.
+## 📂 Project Structure
 
-#### Web
-
-Web previews will be started and managred automatically. Use the toolbar to manually refresh.
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+isaac-todolist-app/
+│
+├── app/
+│   ├── components/      # Reusable components (ListItem, TaskItem)
+│   ├── screens/         # Main screens (ListsScreen, TasksScreen)
+│   └── storage.js       # AsyncStorage helpers
+│
+├── assets/              # App assets & screenshots
+├── constants/           # Color constants
+│   └── Colors.ts
+│
+├── App.js               # Root app entry
+├── app.json             # Expo configuration
+└── README.md            # Documentation
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🛠️ Installation & Setup
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Clone the repository:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+   ```bash
+   git clone https://github.com/your-username/isaac-todolist-app.git
+   cd isaac-todolist-app
+   ```
 
-## Join the community
+2. Install dependencies:
 
-Join our community of developers creating universal apps.
+   ```bash
+   npm install
+   ```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3. Start the Expo development server:
+
+   ```bash
+   npx expo start
+   ```
+
+4. Run on your device:
+
+   * 📱 Scan the QR code with **Expo Go** app (Android/iOS).
+   * 🌐 Or open in the browser for web preview.
+
+---
+
+## 📸 Screenshots
+
+Screenshots of the app can be found in the **assets/** folder.
+Add them here if you want them displayed in the README:
+
+```
+assets/
+ ├── screenshot1.png
+ ├── screenshot2.png
+ └── screenshot3.png
+```
+
+Example in markdown:
+
+```md
+![Home Screen](assets/screenshot1.png)
+![Tasks Screen](assets/screenshot2.png)
+```
+
+---
+
+## 🎨 Tech Stack
+
+* [React Native](https://reactnative.dev/) – UI framework
+* [Expo](https://expo.dev/) – Development & bundling
+* [React Navigation](https://reactnavigation.org/) – Screen navigation
+* [AsyncStorage](https://react-native-async-storage.github.io/async-storage/) – Persistent local storage
+* [Ionicons](https://icons.expo.fyi/) – Icons
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! If you’d like to improve UI/UX or add new features, feel free to fork and submit a PR.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – free to use, modify, and distribute.
+
+---
+
