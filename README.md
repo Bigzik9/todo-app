@@ -1,6 +1,3 @@
-Got it 👍 I'll draft a nice **README.md** for your **To-Do List App** project based on your folder structure and features.
-
-Here’s a complete **README.md** you can paste directly into your project:
 
 ---
 
