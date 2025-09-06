@@ -46,7 +46,7 @@ isaac-todolist-app/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/isaac-todolist-app.git
+   git clone https://github.com/Bigzik9/todo-app.git
    cd isaac-todolist-app
    ```
 
